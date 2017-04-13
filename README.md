@@ -13,5 +13,13 @@ $("#myselect").zselect();
 ```
 
 ### 控件的实现思路
-1.首先实始化html框架。
-2.获取data-options
+1.首先实始化html框架。<br/>
+2.获取jquery对象中的data-options，再与控件中已经定义好的data.options合并，再$().data("mrczselect", options);<br/>
+3.再根据options中的attr_code，从LocalStorage中获取初始化数据。
+4.localStorage不存在数据，则去服务器获取数据。
+
+### 控件方法介绍
+options:<br/>
+获取当前控件初始化的参数<br/>
+setValue:<br/>
+设置选中的值，value可以是值或index<br/>
