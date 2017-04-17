@@ -9,7 +9,7 @@ id="myselect" style="width: 100px;">
 ```
 *具体javascrpit
 ```javascript
-$("#myselect").zselect();
+$("#myselect").mrcselect();
 ```
 
 ### 控件的实现思路
@@ -18,7 +18,7 @@ $("#myselect").zselect();
 3.再根据options中的attr_code，从LocalStorage中获取初始化数据。
 4.localStorage不存在数据，则去服务器获取数据。
 
-### 控件方法介绍
+### 控件常用方法介绍
 options:<br/>
 获取当前控件初始化的参数<br/>
 setValue:<br/>
